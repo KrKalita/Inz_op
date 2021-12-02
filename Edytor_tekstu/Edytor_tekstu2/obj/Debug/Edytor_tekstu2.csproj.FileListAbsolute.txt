@@ -1,0 +1,30 @@
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe.config
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.pdb
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csprojAssemblyReference.cache
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Form1.resources
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Properties.Resources.resources
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.GenerateResource.cache
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\Edytor_tekstu\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.pdb
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe.config
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.pdb
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csprojAssemblyReference.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Form1.resources
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Properties.Resources.resources
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.GenerateResource.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\PROJEKT_KOD\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.pdb
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe.config
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.pdb
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csprojAssemblyReference.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Form1.resources
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Properties.Resources.resources
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.GenerateResource.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.exe
+C:\Users\Krzysiek\Desktop\studia\semestr_5\Inż.op\OBSZAR 2(do zrobienia)\Edytor_tekstu\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.pdb
