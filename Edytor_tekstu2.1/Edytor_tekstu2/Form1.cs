@@ -24,23 +24,22 @@ namespace Edytor_tekstu2
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            //5:20
-            //richTextBox1.Text=
         }
 
         private void zapiszToolStripButton_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                richTextBox1.SaveFile(saveFileDialog1.FileName);
         }
 
         private void otwórzToolStripButton_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+                richTextBox1.LoadFile(openFileDialog1.FileName);
         }
 
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            //4:44????
         }
 
         private void wytnijToolStripButton_Click(object sender, EventArgs e)
@@ -65,9 +64,32 @@ namespace Edytor_tekstu2
 
         private void drukujToolStripButton_Click(object sender, EventArgs e)
         {
-
+            Panel panel = new Panel();
+            this.Controls.Add(panel);
+            Graphics grp = panel.CreateGraphics();
+            Size formSize = this.ClientSize;
+            bitmap = new Bitmap(formSize.Width, formSize.Height, grp);
+            grp = Graphics.FromImage(bitmap);
+            Point panelLocation = PointToScreen(panel.Location);
+            grp.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, formSize);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+        }
+        Bitmap bitmap;
+        private void CaptureScreen()
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            bitmap = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(bitmap);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
         }
 
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(richTextBox1.Text, this.Font ,Brushes.Black,150, 150);
+        }
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 

@@ -28,3 +28,13 @@ C:\Users\Lucas\Desktop\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.cs
 C:\Users\Lucas\Desktop\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.CoreCompileInputs.cache
 C:\Users\Lucas\Desktop\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.exe
 C:\Users\Lucas\Desktop\Edytor_tekstu2\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.pdb
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe.config
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.exe
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\bin\Debug\Edytor_tekstu2.pdb
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csprojAssemblyReference.cache
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Form1.resources
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.Properties.Resources.resources
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.GenerateResource.cache
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.csproj.CoreCompileInputs.cache
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.exe
+C:\Users\sdomi\Source\Repos\KrKalita\Inz_op\Edytor_tekstu2.1\Edytor_tekstu2\obj\Debug\Edytor_tekstu2.pdb

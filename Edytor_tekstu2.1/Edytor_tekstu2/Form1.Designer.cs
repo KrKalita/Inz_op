@@ -105,15 +105,6 @@ namespace Edytor_tekstu2
             this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beginarrayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funkcjeMatematyczneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.asdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asdfToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.asdfToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.arccosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arcsinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arctanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,6 +121,17 @@ namespace Edytor_tekstu2
             this.sinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
+            this.asdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdfToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdfToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -286,56 +288,56 @@ namespace Edytor_tekstu2
             // documentclassToolStripMenuItem
             // 
             this.documentclassToolStripMenuItem.Name = "documentclassToolStripMenuItem";
-            this.documentclassToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.documentclassToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.documentclassToolStripMenuItem.Text = "\\documentclass";
             this.documentclassToolStripMenuItem.Click += new System.EventHandler(this.documentclassToolStripMenuItem_Click);
             // 
             // usepackageToolStripMenuItem
             // 
             this.usepackageToolStripMenuItem.Name = "usepackageToolStripMenuItem";
-            this.usepackageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usepackageToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.usepackageToolStripMenuItem.Text = "\\usepackage{}";
             this.usepackageToolStripMenuItem.Click += new System.EventHandler(this.usepackageToolStripMenuItem_Click);
             // 
             // begindocumentToolStripMenuItem
             // 
             this.begindocumentToolStripMenuItem.Name = "begindocumentToolStripMenuItem";
-            this.begindocumentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.begindocumentToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.begindocumentToolStripMenuItem.Text = "\\begin{document}";
             this.begindocumentToolStripMenuItem.Click += new System.EventHandler(this.begindocumentToolStripMenuItem_Click);
             // 
             // authorToolStripMenuItem
             // 
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
-            this.authorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.authorToolStripMenuItem.Text = "\\author{}";
             this.authorToolStripMenuItem.Click += new System.EventHandler(this.authorToolStripMenuItem_Click);
             // 
             // titleToolStripMenuItem
             // 
             this.titleToolStripMenuItem.Name = "titleToolStripMenuItem";
-            this.titleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.titleToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.titleToolStripMenuItem.Text = "\\title{}";
             this.titleToolStripMenuItem.Click += new System.EventHandler(this.titleToolStripMenuItem_Click);
             // 
             // dateToolStripMenuItem
             // 
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
-            this.dateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dateToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.dateToolStripMenuItem.Text = "\\date{}";
             this.dateToolStripMenuItem.Click += new System.EventHandler(this.dateToolStripMenuItem_Click);
             // 
             // maketitleToolStripMenuItem
             // 
             this.maketitleToolStripMenuItem.Name = "maketitleToolStripMenuItem";
-            this.maketitleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maketitleToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.maketitleToolStripMenuItem.Text = "\\maketitle{}";
             this.maketitleToolStripMenuItem.Click += new System.EventHandler(this.maketitleToolStripMenuItem_Click);
             // 
             // tableofcontentsToolStripMenuItem
             // 
             this.tableofcontentsToolStripMenuItem.Name = "tableofcontentsToolStripMenuItem";
-            this.tableofcontentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tableofcontentsToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.tableofcontentsToolStripMenuItem.Text = "\\tableofcontents";
             this.tableofcontentsToolStripMenuItem.Click += new System.EventHandler(this.tableofcontentsToolStripMenuItem_Click);
             // 
@@ -350,7 +352,7 @@ namespace Edytor_tekstu2
             this.paragraphToolStripMenuItem,
             this.subparagraphToolStripMenuItem});
             this.sekcjeToolStripMenuItem.Name = "sekcjeToolStripMenuItem";
-            this.sekcjeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sekcjeToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.sekcjeToolStripMenuItem.Text = "Sekcje";
             // 
             // partToolStripMenuItem
@@ -414,7 +416,7 @@ namespace Edytor_tekstu2
             this.bezszeryfowyToolStripMenuItem,
             this.podkreślenieToolStripMenuItem});
             this.styleCzcionkiToolStripMenuItem.Name = "styleCzcionkiToolStripMenuItem";
-            this.styleCzcionkiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.styleCzcionkiToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.styleCzcionkiToolStripMenuItem.Text = "Style czcionki";
             // 
             // wyróżnionyToolStripMenuItem
@@ -487,7 +489,7 @@ namespace Edytor_tekstu2
             this.hugeToolStripMenuItem,
             this.hugeToolStripMenuItem1});
             this.rozmiarCzcionkiToolStripMenuItem.Name = "rozmiarCzcionkiToolStripMenuItem";
-            this.rozmiarCzcionkiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rozmiarCzcionkiToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.rozmiarCzcionkiToolStripMenuItem.Text = "Rozmiar czcionki";
             // 
             // tinyToolStripMenuItem
@@ -567,7 +569,7 @@ namespace Edytor_tekstu2
             this.bibliographyToolStripMenuItem,
             this.addbibresourceToolStripMenuItem});
             this.bibliografiaToolStripMenuItem.Name = "bibliografiaToolStripMenuItem";
-            this.bibliografiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bibliografiaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.bibliografiaToolStripMenuItem.Text = "Bibliografia";
             // 
             // bibliographystyleToolStripMenuItem
@@ -602,7 +604,7 @@ namespace Edytor_tekstu2
             this.vspaceToolStripMenuItem,
             this.bigskipToolStripMenuItem});
             this.odstępyPionoweToolStripMenuItem.Name = "odstępyPionoweToolStripMenuItem";
-            this.odstępyPionoweToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.odstępyPionoweToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.odstępyPionoweToolStripMenuItem.Text = "Odstępy pionowe";
             // 
             // newpageToolStripMenuItem
@@ -776,6 +778,118 @@ namespace Edytor_tekstu2
             this.funkcjeMatematyczneToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
             this.funkcjeMatematyczneToolStripMenuItem.Text = "Funkcje matematyczne";
             // 
+            // arccosToolStripMenuItem
+            // 
+            this.arccosToolStripMenuItem.Name = "arccosToolStripMenuItem";
+            this.arccosToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.arccosToolStripMenuItem.Text = "\\arccos";
+            this.arccosToolStripMenuItem.Click += new System.EventHandler(this.arccosToolStripMenuItem_Click);
+            // 
+            // arcsinToolStripMenuItem
+            // 
+            this.arcsinToolStripMenuItem.Name = "arcsinToolStripMenuItem";
+            this.arcsinToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.arcsinToolStripMenuItem.Text = "\\arcsin";
+            this.arcsinToolStripMenuItem.Click += new System.EventHandler(this.arcsinToolStripMenuItem_Click);
+            // 
+            // arctanToolStripMenuItem
+            // 
+            this.arctanToolStripMenuItem.Name = "arctanToolStripMenuItem";
+            this.arctanToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.arctanToolStripMenuItem.Text = "\\arctan";
+            this.arctanToolStripMenuItem.Click += new System.EventHandler(this.arctanToolStripMenuItem_Click);
+            // 
+            // cosToolStripMenuItem
+            // 
+            this.cosToolStripMenuItem.Name = "cosToolStripMenuItem";
+            this.cosToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cosToolStripMenuItem.Text = "\\cos";
+            this.cosToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
+            // 
+            // coshToolStripMenuItem
+            // 
+            this.coshToolStripMenuItem.Name = "coshToolStripMenuItem";
+            this.coshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.coshToolStripMenuItem.Text = "\\cosh";
+            this.coshToolStripMenuItem.Click += new System.EventHandler(this.coshToolStripMenuItem_Click);
+            // 
+            // cotToolStripMenuItem
+            // 
+            this.cotToolStripMenuItem.Name = "cotToolStripMenuItem";
+            this.cotToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cotToolStripMenuItem.Text = "\\cot";
+            this.cotToolStripMenuItem.Click += new System.EventHandler(this.cotToolStripMenuItem_Click);
+            // 
+            // cothToolStripMenuItem
+            // 
+            this.cothToolStripMenuItem.Name = "cothToolStripMenuItem";
+            this.cothToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cothToolStripMenuItem.Text = "\\coth";
+            this.cothToolStripMenuItem.Click += new System.EventHandler(this.cothToolStripMenuItem_Click);
+            // 
+            // cscToolStripMenuItem
+            // 
+            this.cscToolStripMenuItem.Name = "cscToolStripMenuItem";
+            this.cscToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cscToolStripMenuItem.Text = "\\csc";
+            this.cscToolStripMenuItem.Click += new System.EventHandler(this.cscToolStripMenuItem_Click);
+            // 
+            // degToolStripMenuItem
+            // 
+            this.degToolStripMenuItem.Name = "degToolStripMenuItem";
+            this.degToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.degToolStripMenuItem.Text = "\\deg";
+            this.degToolStripMenuItem.Click += new System.EventHandler(this.degToolStripMenuItem_Click);
+            // 
+            // detToolStripMenuItem
+            // 
+            this.detToolStripMenuItem.Name = "detToolStripMenuItem";
+            this.detToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.detToolStripMenuItem.Text = "\\det";
+            this.detToolStripMenuItem.Click += new System.EventHandler(this.detToolStripMenuItem_Click);
+            // 
+            // dimToolStripMenuItem
+            // 
+            this.dimToolStripMenuItem.Name = "dimToolStripMenuItem";
+            this.dimToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.dimToolStripMenuItem.Text = "\\dim";
+            this.dimToolStripMenuItem.Click += new System.EventHandler(this.dimToolStripMenuItem_Click);
+            // 
+            // expToolStripMenuItem
+            // 
+            this.expToolStripMenuItem.Name = "expToolStripMenuItem";
+            this.expToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.expToolStripMenuItem.Text = "\\exp";
+            this.expToolStripMenuItem.Click += new System.EventHandler(this.expToolStripMenuItem_Click);
+            // 
+            // logToolStripMenuItem
+            // 
+            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.logToolStripMenuItem.Text = "\\log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
+            // 
+            // sinToolStripMenuItem
+            // 
+            this.sinToolStripMenuItem.Name = "sinToolStripMenuItem";
+            this.sinToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.sinToolStripMenuItem.Text = "\\sin";
+            this.sinToolStripMenuItem.Click += new System.EventHandler(this.sinToolStripMenuItem_Click);
+            // 
+            // tanToolStripMenuItem
+            // 
+            this.tanToolStripMenuItem.Name = "tanToolStripMenuItem";
+            this.tanToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.tanToolStripMenuItem.Text = "\\tan";
+            this.tanToolStripMenuItem.Click += new System.EventHandler(this.tanToolStripMenuItem_Click);
+            // 
+            // tanhToolStripMenuItem
+            // 
+            this.tanhToolStripMenuItem.Name = "tanhToolStripMenuItem";
+            this.tanhToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.tanhToolStripMenuItem.Text = "\\tanh";
+            this.tanhToolStripMenuItem.Click += new System.EventHandler(this.tanhToolStripMenuItem_Click);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -784,7 +898,7 @@ namespace Edytor_tekstu2
             // 
             // saveFileDialog1
             // 
-            this.saveFileDialog1.Filter = "Text Files (*.txt)|*.txt";
+            this.saveFileDialog1.Filter = "Rich Text File|*.txt";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // toolStripTextBox1
@@ -839,117 +953,19 @@ namespace Edytor_tekstu2
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(161, 145);
             // 
-            // arccosToolStripMenuItem
+            // printDocument1
             // 
-            this.arccosToolStripMenuItem.Name = "arccosToolStripMenuItem";
-            this.arccosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.arccosToolStripMenuItem.Text = "\\arccos";
-            this.arccosToolStripMenuItem.Click += new System.EventHandler(this.arccosToolStripMenuItem_Click);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // arcsinToolStripMenuItem
+            // printPreviewDialog1
             // 
-            this.arcsinToolStripMenuItem.Name = "arcsinToolStripMenuItem";
-            this.arcsinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.arcsinToolStripMenuItem.Text = "\\arcsin";
-            this.arcsinToolStripMenuItem.Click += new System.EventHandler(this.arcsinToolStripMenuItem_Click);
-            // 
-            // arctanToolStripMenuItem
-            // 
-            this.arctanToolStripMenuItem.Name = "arctanToolStripMenuItem";
-            this.arctanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.arctanToolStripMenuItem.Text = "\\arctan";
-            this.arctanToolStripMenuItem.Click += new System.EventHandler(this.arctanToolStripMenuItem_Click);
-            // 
-            // cosToolStripMenuItem
-            // 
-            this.cosToolStripMenuItem.Name = "cosToolStripMenuItem";
-            this.cosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cosToolStripMenuItem.Text = "\\cos";
-            this.cosToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
-            // 
-            // coshToolStripMenuItem
-            // 
-            this.coshToolStripMenuItem.Name = "coshToolStripMenuItem";
-            this.coshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.coshToolStripMenuItem.Text = "\\cosh";
-            this.coshToolStripMenuItem.Click += new System.EventHandler(this.coshToolStripMenuItem_Click);
-            // 
-            // cotToolStripMenuItem
-            // 
-            this.cotToolStripMenuItem.Name = "cotToolStripMenuItem";
-            this.cotToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cotToolStripMenuItem.Text = "\\cot";
-            this.cotToolStripMenuItem.Click += new System.EventHandler(this.cotToolStripMenuItem_Click);
-            // 
-            // cothToolStripMenuItem
-            // 
-            this.cothToolStripMenuItem.Name = "cothToolStripMenuItem";
-            this.cothToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cothToolStripMenuItem.Text = "\\coth";
-            this.cothToolStripMenuItem.Click += new System.EventHandler(this.cothToolStripMenuItem_Click);
-            // 
-            // cscToolStripMenuItem
-            // 
-            this.cscToolStripMenuItem.Name = "cscToolStripMenuItem";
-            this.cscToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cscToolStripMenuItem.Text = "\\csc";
-            this.cscToolStripMenuItem.Click += new System.EventHandler(this.cscToolStripMenuItem_Click);
-            // 
-            // degToolStripMenuItem
-            // 
-            this.degToolStripMenuItem.Name = "degToolStripMenuItem";
-            this.degToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.degToolStripMenuItem.Text = "\\deg";
-            this.degToolStripMenuItem.Click += new System.EventHandler(this.degToolStripMenuItem_Click);
-            // 
-            // detToolStripMenuItem
-            // 
-            this.detToolStripMenuItem.Name = "detToolStripMenuItem";
-            this.detToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.detToolStripMenuItem.Text = "\\det";
-            this.detToolStripMenuItem.Click += new System.EventHandler(this.detToolStripMenuItem_Click);
-            // 
-            // dimToolStripMenuItem
-            // 
-            this.dimToolStripMenuItem.Name = "dimToolStripMenuItem";
-            this.dimToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dimToolStripMenuItem.Text = "\\dim";
-            this.dimToolStripMenuItem.Click += new System.EventHandler(this.dimToolStripMenuItem_Click);
-            // 
-            // expToolStripMenuItem
-            // 
-            this.expToolStripMenuItem.Name = "expToolStripMenuItem";
-            this.expToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.expToolStripMenuItem.Text = "\\exp";
-            this.expToolStripMenuItem.Click += new System.EventHandler(this.expToolStripMenuItem_Click);
-            // 
-            // logToolStripMenuItem
-            // 
-            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logToolStripMenuItem.Text = "\\log";
-            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
-            // 
-            // sinToolStripMenuItem
-            // 
-            this.sinToolStripMenuItem.Name = "sinToolStripMenuItem";
-            this.sinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sinToolStripMenuItem.Text = "\\sin";
-            this.sinToolStripMenuItem.Click += new System.EventHandler(this.sinToolStripMenuItem_Click);
-            // 
-            // tanToolStripMenuItem
-            // 
-            this.tanToolStripMenuItem.Name = "tanToolStripMenuItem";
-            this.tanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tanToolStripMenuItem.Text = "\\tan";
-            this.tanToolStripMenuItem.Click += new System.EventHandler(this.tanToolStripMenuItem_Click);
-            // 
-            // tanhToolStripMenuItem
-            // 
-            this.tanhToolStripMenuItem.Name = "tanhToolStripMenuItem";
-            this.tanhToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tanhToolStripMenuItem.Text = "\\tanh";
-            this.tanhToolStripMenuItem.Click += new System.EventHandler(this.tanhToolStripMenuItem_Click);
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // Form1
             // 
@@ -1072,6 +1088,8 @@ namespace Edytor_tekstu2
         private System.Windows.Forms.ToolStripMenuItem sinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tanhToolStripMenuItem;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 

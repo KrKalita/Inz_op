@@ -44,6 +44,8 @@ namespace Edytor_tekstu2
             this.pomocToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,9 +55,10 @@ namespace Edytor_tekstu2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.richTextBox1.Location = new System.Drawing.Point(-2, 41);
+            this.richTextBox1.Location = new System.Drawing.Point(-2, 33);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(801, 410);
+            this.richTextBox1.Size = new System.Drawing.Size(602, 334);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -76,7 +79,7 @@ namespace Edytor_tekstu2
             this.pomocToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(600, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -86,7 +89,7 @@ namespace Edytor_tekstu2
             this.nowyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("nowyToolStripButton.Image")));
             this.nowyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nowyToolStripButton.Name = "nowyToolStripButton";
-            this.nowyToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.nowyToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.nowyToolStripButton.Text = "&Nowy";
             this.nowyToolStripButton.Click += new System.EventHandler(this.nowyToolStripButton_Click);
             // 
@@ -96,7 +99,7 @@ namespace Edytor_tekstu2
             this.otwórzToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("otwórzToolStripButton.Image")));
             this.otwórzToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.otwórzToolStripButton.Name = "otwórzToolStripButton";
-            this.otwórzToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.otwórzToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.otwórzToolStripButton.Text = "&Otwórz";
             this.otwórzToolStripButton.Click += new System.EventHandler(this.otwórzToolStripButton_Click);
             // 
@@ -106,7 +109,7 @@ namespace Edytor_tekstu2
             this.zapiszToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("zapiszToolStripButton.Image")));
             this.zapiszToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zapiszToolStripButton.Name = "zapiszToolStripButton";
-            this.zapiszToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.zapiszToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.zapiszToolStripButton.Text = "&Zapisz";
             this.zapiszToolStripButton.Click += new System.EventHandler(this.zapiszToolStripButton_Click);
             // 
@@ -116,7 +119,7 @@ namespace Edytor_tekstu2
             this.drukujToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("drukujToolStripButton.Image")));
             this.drukujToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.drukujToolStripButton.Name = "drukujToolStripButton";
-            this.drukujToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.drukujToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.drukujToolStripButton.Text = "&Drukuj";
             this.drukujToolStripButton.Click += new System.EventHandler(this.drukujToolStripButton_Click);
             // 
@@ -131,7 +134,7 @@ namespace Edytor_tekstu2
             this.wytnijToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("wytnijToolStripButton.Image")));
             this.wytnijToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.wytnijToolStripButton.Name = "wytnijToolStripButton";
-            this.wytnijToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.wytnijToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.wytnijToolStripButton.Text = "&Wytnij";
             this.wytnijToolStripButton.Click += new System.EventHandler(this.wytnijToolStripButton_Click);
             // 
@@ -141,7 +144,7 @@ namespace Edytor_tekstu2
             this.kopiujToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("kopiujToolStripButton.Image")));
             this.kopiujToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kopiujToolStripButton.Name = "kopiujToolStripButton";
-            this.kopiujToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.kopiujToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.kopiujToolStripButton.Text = "&Kopiuj";
             this.kopiujToolStripButton.Click += new System.EventHandler(this.kopiujToolStripButton_Click);
             // 
@@ -151,7 +154,7 @@ namespace Edytor_tekstu2
             this.wklejToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("wklejToolStripButton.Image")));
             this.wklejToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.wklejToolStripButton.Name = "wklejToolStripButton";
-            this.wklejToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.wklejToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.wklejToolStripButton.Text = "&Wklej";
             this.wklejToolStripButton.Click += new System.EventHandler(this.wklejToolStripButton_Click);
             // 
@@ -166,7 +169,7 @@ namespace Edytor_tekstu2
             this.pomocToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pomocToolStripButton.Image")));
             this.pomocToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pomocToolStripButton.Name = "pomocToolStripButton";
-            this.pomocToolStripButton.Size = new System.Drawing.Size(29, 24);
+            this.pomocToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.pomocToolStripButton.Text = "&Pomoc";
             this.pomocToolStripButton.Click += new System.EventHandler(this.pomocToolStripButton_Click);
             // 
@@ -181,13 +184,28 @@ namespace Edytor_tekstu2
             this.saveFileDialog1.Filter = "Text Files (*.txt)|*.txt";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.richTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Text Editor";
             this.toolStrip1.ResumeLayout(false);
@@ -213,6 +231,8 @@ namespace Edytor_tekstu2
         private System.Windows.Forms.ToolStripButton pomocToolStripButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 

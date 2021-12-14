@@ -64,12 +64,36 @@ namespace Edytor_tekstu2
 
         private void drukujToolStripButton_Click(object sender, EventArgs e)
         {
-
+            Panel panel = new Panel();
+            this.Controls.Add(panel);
+            Graphics grp = panel.CreateGraphics();
+            Size formSize = this.ClientSize;
+            bitmap = new Bitmap(formSize.Width, formSize.Height, grp);
+            grp = Graphics.FromImage(bitmap);
+            Point panelLocation = PointToScreen(panel.Location);
+            grp.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, formSize);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+        }
+        Bitmap bitmap;
+        private void CaptureScreen()
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            bitmap = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(bitmap);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap, 0, 0);
         }
     }
 }
